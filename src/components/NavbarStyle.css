@@ -1,0 +1,4 @@
+.nav-spacing .nav-link,
+.nav-spacing .nav-item {
+  margin-left: 20px; /* Adjust the value as needed */
+}
