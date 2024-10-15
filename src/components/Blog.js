@@ -1,56 +1,69 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import PropTypes from "prop-types";
 import './BlogStyle.css'
-
+// import blog1 from
 const blogs = [
-	{
-		title: "Not Your Regular Home Decoration?",
+	{	
+		id: 1,
+		title: "به راحتی پذیرش بگیریم",
 		description:
-			"Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.",
-		author: " John Leo",
-		date: "21 Jun, 2022",
+			"معین جان شما باید همه ی این ها رو مطالبش رو به من بگی",
+		author: " مهندس معین خزایی",
+		date: "۱۴.۳ مهر",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_1.jpg",
+		link:  '../blogs/Blog1',
 	},
-	{
+	{	
+		id: 2,
 		title: "Long lasting fall scent for women sale offer",
 		description:
 			"It’s no secret that the digital industry is booming. From exciting startups to global brands.",
 		author: " Abraham Frin",
 		date: "21 Jun, 2022",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_2.jpg",
+		link:  '../blogs/Blog2',
 	},
-	{
+	{	
+		id: 3,
 		title: "How I’m Styling Everyday Black Outfits",
 		description:
 			"Viverra tellus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl.",
 		author: " Finn Alen",
 		date: "21 Jun, 2022",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg",
+		link:  '../blogs/Blog3',
 	},
-	{
+	{	
+		id: 4,
 		title: "Fashion Essentials All Men Should Know",
 		description:
 			"Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque laudantium.",
 		author: " Warner Mac",
 		date: "21 Jun, 2022",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_4.jpg",
+		link:  '../blogs/Blog4',
 	},
-	{
+	{	
+		id: 5,
 		title: "Dolor sit amet, consectetur adiplscing eliyt sed",
 		description:
 			"More off this less hello salamander lied porpoise much over tightly circa horse taped.",
 		author: " Maxy Paulo",
 		date: "21 Jun, 2022",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_13_3.jpg",
+		link:  '../blogs/Blog5',
 	},
-	{
+	{	
+		id: 6,
 		title: "Not Your Regular Home Decoration?",
 		description:
 			"Urna molestie at eleme ntum eu facilisis sed odio Male suada fames .",
 		author: " Sarah Taylor",
 		date: "21 Jun, 2022",
 		image: "https://cdn.easyfrontend.com/pictures/blog/blog_13_1.jpg",
+		link:  '../blogs/Blog6',
 	},
 ];
 
@@ -62,18 +75,23 @@ const BlogItem = ({ blog }) => {
 				<h4 className="ezy__blog2-title fs-4 mb-2">{blog.title}</h4>
 				<p className="ezy__blog2-author">
 					<span className="me-2">
-						By{" "}
+						{" "} نوشته شده توسط 
 						<a href="#!" className="text-decoration-none">
 							{blog.author}
 						</a>
 					</span>
 					<span>
-						At <span>{blog.date}</span>
+						در <span>{blog.date}</span>
 					</span>
 				</p>
 				<p className="ezy__blog2-description mt-3 mb-4">{blog.description}</p>
-				<Button variant="" className="ezy__blog2-btn-read-more">
-					Read More
+				<Button 
+				variant=""
+				className="ezy__blog2-btn-read-more" 
+				>
+					<Link to={`/blog/${blog.id}`} style={{ textDecoration: 'none' }}>
+						Read More
+					</Link>
 				</Button>
 			</div>
 		</article>
@@ -91,13 +109,12 @@ const Blog = () => {
 				<Row className="justify-content-center">
 					<Col lg={8} className="text-center">
 						<h2 className="ezy__blog2-heading mb-3 mt-0">
-							HOME TOUR: SUMMER DECORATION
+							تور اپلای با ما
 						</h2>
 						<p className="ezy__blog2-sub-heading px-lg-5 mb-4">
-							Banking crises have developed many times throughout history when
-							one or more risks have emerged for a banking sector as a whole.
+							گرفتن پذیرش کاری راهی بسیار پر چالش است. ما در کنار شما هستیم.
 						</p>
-						<Button variant="" className="ezy__blog2-btn">
+						<Button variant="" className="ezy__blog2-btn" href="../blogs/Blog1">
 							All Posts
 						</Button>
 					</Col>

@@ -1,12 +1,9 @@
 import React from 'react';
+import {Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import  Home from './pages/Home'
+import BlogDetails from './pages/BlogDetails'; // Create this component for blog details
 import Navbar from './components/Navbar'
-import Blog from './components/Blog';
-import About from './components/About';
-import Contact from './components/Contact';
-import Gap from './components/Gap'
-import Footer from './components/Footer'
-import Pricing from './components/Pricing';
 
 import './App.css';
 
@@ -14,17 +11,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <main>
-        {/* <Home />
-        <Gap /> */}
-        <About />
-        <Blog />
-        {/* <Gap /> */}
-        <Pricing />
-        <Contact />
-        <Gap />
-        <Footer />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+      </Routes>
     </div>
   );
 }
