@@ -1,12 +1,12 @@
 import React from "react";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { Col, Container, Nav, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
 import './Blog.css'
-
+import ComingSoon from '../components/ComingSoon'
 
 
 const blogDetailInfo = [
@@ -212,7 +212,7 @@ const BlogItem = ({ item }) => {
 	const blog = blogDetailInfo.find(blog => blog.id === parseInt(id));
   
 	if (!blog) {
-	  return <div>Blog not found</div>;
+	  return <ComingSoon />;
 	}
   
 	return (
