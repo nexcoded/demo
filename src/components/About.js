@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { Button, Col, Container, Nav, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -179,11 +181,10 @@ const About = () => {
 					</Col>
 					<Col xs={12} md={6} className="me-md-4">
 						<div>
-							<h2 className="ezy__about17-heading">Noman Ali Khan's Story</h2>
-							<p className="ezy__about17-sub-heading my-4 pe-lg-5">
-								Assumenda non repellendus distinctio nihil dicta sapiente,
-								quibusdam maiores, illum at, aliquid blanditiis eligendi
-								qui.Assumenda non repellendus distinctio nihil dicta sapiente.
+							<h2 className="ezy__about17-heading" style={{textAlign: 'right'}}> به‌ اپلای نست خوش آمدید </h2>
+							<p className="ezy__about17-sub-heading my-4 pe-lg-5"  dir="rtl" style={{textAlign: 'justify'}}>
+							خدمات حرفه‌ای و با کیفیت را در زمینه استخراج مقاله، نگارش مقالات علمی، تقویت رزومه و بهبود مهارت‌های زبانی برای دانشجویان و پژوهشگران فراهم می‌آوریم. هدف ما کمک به دانشجویان و محققان است تا با آماده‌سازی دقیق و حرفه‌ای، در فرایند اپلای به دانشگاه‌ها و موسسات بین‌المللی موفقیت کسب کنند. در اینجا به معرفی خدمات اصلی ما می‌پردازیم و نشان می‌دهیم که چگونه می‌توانیم در این مسیر همراه شما باشیم.
+
 							</p>
 							<div className="ezy__about17-cards">
 								{stories.map((item, i) => (
@@ -193,7 +194,9 @@ const About = () => {
 						</div>
 						<div className="d-flex mt-5">
 							<Button variant="" className="ezy__about17-btn">
-								About Me
+							<Link to="/AboutUs" style={{ textDecoration: 'none' }}>
+								 بیشتر
+							</Link>
 							</Button>
 							<div className="d-flex ms-5">
 								<Nav className="ezy__about17-social">

@@ -1,0 +1,71 @@
+
+
+.ezy__epother6 {
+    /* Bootstrap variables */
+    --bs-body-color: #28303b;
+    --bs-body-bg: rgb(255, 255, 255);
+
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+@media (min-width: 992px) {
+    .ezy__epother6 {
+        padding: 100px 0;
+    }
+}
+
+/* Gray Block Style */
+.gray .ezy__epother6,
+.ezy__epother6.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epother6,
+.ezy__epother6.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+}
+
+/* Dark Block Style */
+.dark .ezy__epother6,
+.ezy__epother6.dark {
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+}
+
+.ezy__epother6 img {
+    border-radius: 8px;
+}
+
+.ezy__epother6 h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .ezy__epother6 h2 {
+        font-size: 36px;
+    }
+}
+
+.ezy__epother6 p {
+    font-size: 17px;
+    opacity: 0.7;
+    line-height: 1.85;
+}
+
+@media (min-width: 992px) {
+    .ezy__epother6 p {
+        font-size: 18;
+    }
+}

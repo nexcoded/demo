@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import  Home from './pages/Home'
 import BlogDetails from './pages/BlogDetails'; // Create this component for blog details
 import Navbar from './components/Navbar'
+import AboutUs from './pages/aboutUs'
 
 import './App.css';
 
@@ -13,7 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Blog/:id" element={<BlogDetails />} />
       </Routes>
     </div>
   );

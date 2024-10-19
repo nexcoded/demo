@@ -54,6 +54,7 @@ const NavbarBootstrap = () => {
             <Nav.Link onClick={() => handleNavigation('pric1')}>پکیج ها</Nav.Link>
             <Nav.Link onClick={() => handleNavigation('blog2')}>خدمات</Nav.Link>
             <Nav.Link onClick={() => handleNavigation('ezy__about17')}>در مورد ما</Nav.Link>
+						
           </Nav>
         </Navbar.Collapse>
       </Container>
