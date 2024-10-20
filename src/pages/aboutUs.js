@@ -61,18 +61,20 @@ const aboutUs = () => {
 				<Row>
 					<Col xs={12}>
 						{features.map((feature, index) => (
-							<Row className="justify-content-between mt-5" key={index}>
-								<Col xs={12} lg={6}>
+							<Row className="justify-content-between mt-5" key={index}  dir="rtl">
+		       					<Col xs={12} lg={6}>
 									<div className="text-center">
 										<img src={feature.image} alt="" className="img-fluid" />
 									</div>
 								</Col>
-                                <Col xs={12} lg={6}>
-                                    <div className="d-flex flex-column justify-content-center text-center text-lg-start h-100 mt-4 mt-lg-0 ms-lg-4">
-                                        <h2>{feature.title}</h2>
-                                        <p className="mt-2 me-lg-5">{feature.content}</p>
-                                    </div>
-                                </Col>
+			   
+								<Col xs={12} lg={6}>
+									<div className="d-flex flex-column justify-content-center text-center text-lg-end h-100 mt-4 mt-lg-0 me-lg-4" dir="rtl">
+										<h2>{feature.title}</h2>
+										<p className="mt-2 ms-lg-5">{feature.content}</p>
+									</div>
+								</Col>
+								
 							</Row>
 						))}
 					</Col>

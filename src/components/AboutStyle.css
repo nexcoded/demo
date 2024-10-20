@@ -131,11 +131,12 @@
 	width: 35px;
 	height: 35px;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .ezy__about17-social li a:hover {
-	background-color: var(--ezy-theme-color);
+	background-color: #ffffff;
 	border-color: var(--ezy-theme-color) !important;
-	color: #fff;
+	color: #516183;
+	transform: scale(1.5);
 }

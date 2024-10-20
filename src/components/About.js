@@ -10,9 +10,9 @@ import {
 	faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-	faFacebookF,
+	faTelegram,
+	faYoutube,
 	faLinkedinIn,
-	faPinterestP,
 	faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
@@ -39,20 +39,20 @@ const stories = [
 
 const social = [
 	{
-		icon: faFacebookF,
-		link: "#",
+		icon: faTelegram,
+		link: "https://t.me/Apply_Nest",
 	},
 	{
 		icon: faTwitter,
 		link: "#",
 	},
 	{
-		icon: faPinterestP,
-		link: "#",
+		icon: faYoutube,
+		link: "https://www.youtube.com/shorts/1aqTlXqfc28",
 	},
 	{
 		icon: faLinkedinIn,
-		link: "#",
+		link: "https://www.linkedin.com/in/amirhmalekijoo1990/",
 	},
 ];
 
@@ -76,9 +76,10 @@ const Social = ({ item }) => {
 		<li>
 			<a
 				href={link}
-				className="border d-flex justify-content-center align-items-center rounded-circle"
-			>
-				<FontAwesomeIcon icon={icon} />
+				className="d-flex justify-content-center align-items-center social-link"
+				style={{"margin-right": "25px", "list-style-type": "none"}}
+				>
+				<FontAwesomeIcon icon={icon} size="3x" />
 			</a>
 		</li>
 	);
@@ -194,7 +195,7 @@ const About = () => {
 						</div>
 						<div className="d-flex mt-5">
 							<Button variant="" className="ezy__about17-btn">
-							<Link to="/AboutUs" style={{ textDecoration: 'none' }}>
+							<Link to="/AboutUs" style={{color: 'black', textDecoration: 'none' }}>
 								 بیشتر
 							</Link>
 							</Button>
